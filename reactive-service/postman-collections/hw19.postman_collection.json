@@ -1,0 +1,99 @@
+{
+  "info": {
+    "_postman_id": "b79d8cec-3d67-43c9-a9e4-983ee9624c85",
+    "name": "Hw19",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "29616697"
+  },
+  "item": [
+    {
+      "name": "Get All Product Detailed",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8189/api/v1/detailed/all",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8189",
+          "path": [
+            "api",
+            "v1",
+            "detailed",
+            "all"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Product Detailed By Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8189/api/v1/detailed/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8189",
+          "path": [
+            "api",
+            "v1",
+            "detailed",
+            ":id"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Product Detailed By Ids",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[1,3,5,10,7,3,2,6]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8189/api/v1/detailed/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8189",
+          "path": [
+            "api",
+            "v1",
+            "detailed"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
