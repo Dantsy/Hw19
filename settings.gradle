@@ -1,0 +1,3 @@
+rootProject.name = 'Hw19'
+include "reactive-service"
+include "slow-service"
